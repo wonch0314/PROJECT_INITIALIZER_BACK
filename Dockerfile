@@ -13,3 +13,6 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Entrypoint: Nginx & Uvicorn 동시에 구동
 CMD service nginx start && uvicorn main:app --host 0.0.0.0 --port 8000
+
+# docker build -t my-backend .
+# docker run -d -p 8000:8000 my-backend --name my-backend
