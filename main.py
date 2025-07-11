@@ -10,7 +10,7 @@ origins = [
 
 # .env 파일 로드
 load_dotenv()
-router = APIRouter(prefix="/test", tags=["test"])
+router = APIRouter(prefix="/api/test", tags=["test"])
 
 @router.get("/")
 def test():
